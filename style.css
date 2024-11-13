@@ -1,0 +1,454 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 12%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.logo:hover{
+    color: orangered;
+    text-shadow: 0 0 25px orangered,
+                 0 0 50px orangered;
+    transform: scale(1.1);             
+}
+span{
+    color: orangered;
+}
+.navbar a{
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3 ease;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: orangered;
+    border-bottom: 3px solid orangered;
+}
+.contact{
+    padding: 10px 28px;
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+} 
+.contact:hover{
+    background-color: orangered;
+    box-shadow: 0 0 25px orangered;
+    color: white ;
+}
+.home{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(241, 241, 241);
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12% 0;
+}
+.home-content{
+    max-width: 800px;
+}
+.home-content h3{
+    font-size: 62px;
+    line-height: 1.2;
+}
+.home-content p{
+    font-size: 18px;
+    margin: 25px 0 30px;
+}
+.btn-box{
+    width: 345px;
+    display: flex;
+    gap: 2em;
+}
+.btn-1{
+    padding: 15px 28px;
+    background-color: black;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn-1:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+.btn-2{
+    padding: 15px 28px;
+    background-color: orangered;
+    color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn-2:hover{
+    background-color: white;
+    color: orangered;
+}
+.img-box img{
+    border-radius: 50%;
+    width: 550px;
+}
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: orangered;
+}
+::-webkit-scrollbar-track{
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 50px;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 8%;
+    gap: 10em;
+    background: black;
+}
+.about-image img{
+    position: relative;
+    width: 550px;
+    background-origin: 0 0 25px orangered,
+                       0 0 50px orangered;
+    border-radius: 50%;                   
+}
+.about-content h2{
+    text-align: left;
+    color: white;
+    font-size: 42px;
+}
+.about-content h3{
+    font-size: 62px;
+    color: white;
+}
+.about-content p{
+    color: white;
+    font-size: 20px;
+    margin: 2em 0 3em; 
+}
+.contact-form h2{
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    font-size: 36px;
+}
+.contact-form form{
+    max-width: 50em;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3em;
+}
+.contact-form form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact-form form .input-box input,
+.contact-form form textarea{
+    width: 100%;
+    padding: 1.5em;
+    font-size: 18pax;
+    color: black;
+    background: rgb(241,241,241);
+    border-radius: .8rem;
+    margin: 1rem 0;
+    resize: none;
+}
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: black;
+}
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: white;
+}
+.footer .social a{
+    font-size: 24px;
+    color: white;
+    border: 2px solid orangered;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50;
+    margin: 0 8px;
+    box-shadow: inset 0 0 10px orangered, 0 0 10px orangered;
+    transition: 0.3s ease;
+}
+.footer .social a:hover{
+    transform: scale(1.2) translate(-10px);
+    color: orangered;
+    border: 2 px solid orangered;
+}
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+.footer ul li a {
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+.footer ul li a:hover{
+    border-bottom: 3 px solid orangered;
+}
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+.footer copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+}
+.img {
+    width: 100%; /* Container width */
+    max-width: 600px; /* Optional: Set max width */
+}
+
+.img img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+.experience {
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 50px 20px; /* Padding for spacing */
+    text-align: center; /* Center text */
+}
+
+.experience .heading {
+    font-size: 2.5em; /* Larger font size for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.experience-content {
+    max-width: 800px; /* Limit the width of the content */
+    margin: 0 auto; /* Center the content */
+    text-align: left; /* Align text to the left */
+}
+
+.job {
+    background-color: #fff; /* White background for job entries */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside job entries */
+    margin: 15px 0; /* Space between job entries */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.job h3 {
+    font-size: 1.8em; /* Font size for job titles */
+    margin-bottom: 10px; /* Space below job titles */
+}
+
+.job p {
+    font-weight: bold; /* Bold for job dates */
+    color: #555; /* Darker color for dates */
+}
+
+.job ul {
+    list-style-type: disc; /* Bullet points for list */
+    padding-left: 20px; /* Indent list */
+}
+
+.job ul li {
+    margin: 5px 0; /* Space between list items */
+}
+.projects {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
+    padding: 50px 20px; /* Padding for spacing */
+    text-align: center; /* Center text */
+}
+
+.projects .heading {
+    font-size: 2.5em; /* Larger font size for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.projects-content {
+    max-width: 800px; /* Limit the width of the content */
+    margin: 0 auto; /* Center the content */
+    text-align: left; /* Align text to the left */
+}
+
+.project {
+    background-color: #222; /* Darker background for project entries */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside project entries */
+    margin: 15px 0; /* Space between project entries */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+.project h3 {
+    font-size: 1.8em; /* Font size for project titles */
+    margin-bottom: 10px; /* Space below project titles */
+}
+
+.project p {
+    margin-bottom: 15px; /* Space below project descriptions */
+}
+
+.project a {
+    text-decoration: none; /* Remove underline from links */
+    color: #fff; /* White text color for links */
+    background-color: orangered; /* Bootstrap primary color */
+    padding: 10px 20px; /* Padding for buttons */
+    border-radius: 5px; /* Rounded corners for buttons */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.project a:hover {
+    background-color: orangered; /* Darker blue on hover */
+}
+.education {
+    background-color: #f4f4f4; /* Light background for contrast */
+    color: #333; /* Dark text color */
+    padding: 50px 20px; /* Padding for spacing */
+    text-align: center; /* Center text */
+}
+
+.education .heading {
+    font-size: 2.5em; /* Larger font size for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.education-content {
+    max-width: 800px; /* Limit the width of the content */
+    margin: 0 auto; /* Center the content */
+    text-align: left; /* Align text to the left */
+}
+
+.degree {
+    background-color: #fff; /* White background for degree entries */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside degree entries */
+    margin: 15px 0; /* Space between degree entries */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.degree h3 {
+    font-size: 1.8em; /* Font size for degree titles */
+    margin-bottom: 10px; /* Space below degree titles */
+}
+
+.degree p {
+    margin-bottom: 10px; /* Space below paragraphs */
+}
+.skills {
+    background-color: #000;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.skills .heading {
+    font-size: 2.5em; /* Larger font size for the heading */
+    margin-bottom: 20px; 
+    text-align: center;
+}
+
+.skills-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Space between columns */
+    padding: 0 20px; /* Optional: Add some padding */
+}
+
+.skill {
+    flex: 0 0 calc(50% - 20px); /* Each skill takes 50% of the width minus margin */
+    margin-bottom: 50px; /* Space between rows */
+    text-align: center;
+}
+
+.skill h3 {
+    margin: 10px 0;
+}
+
+.skill-meter {
+    background-color: #444;
+    border-radius: 5px;
+    height: 10px;
+    width: 100%;
+    position: relative;
+}
+
+.skill-level {
+    height: 100%;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.html {
+    width: 90%; /* Adjust percentage as needed */
+    background-color: #e34c26; /* HTML color */
+}
+
+.css {
+    width: 80%; /* Adjust percentage as needed */
+    background-color: #1572b6; /* CSS color */
+}
+
+.javascript {
+    width: 70%; /* Adjust percentage as needed */
+    background-color: #f7df1e; /* JavaScript color */
+}
+
+.uiux {
+    width: 75%; /* Adjust percentage as needed */
+    background-color: #4a90e2; /* UI/UX color */
+}
+
+.skill i {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
